@@ -1,0 +1,11 @@
+<!-- <iframe
+  #pdfViewer
+  [src]="sanitizer.bypassSecurityTrustResourceUrl(pdfViewerUrl)"
+  class="pdf-viewer"
+></iframe> -->
+
+<embed 
+  class="pdf-viewer"
+  [src]= "sanitizer.bypassSecurityTrustResourceUrl(pdfViewerUrl)" 
+  type="application/pdf" 
+/>
